@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/C.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/trangchu.css">
+
+</head>
+<body>
+    
+    <div>
+        <div class=" logo">
+            <a href="#">
+                <img style="font-size: 10px;" src="./img/VTC.jpg" >
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li> <a href ="./sukien/index.html">Dự án</a></li>
+                <li> <a href ="#">Liên Hệ</a></li>
+                <li> <a href ="https://www.facebook.com/trongthai.trieu.3">Facebook</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div>
+        <div class="container">
+            <div class="box">
+                <span style="--i:1;"><img src="./img/nguoi.jpg" alt=""></span>
+                <span style="--i:2;"><img src="./img/hoa1.jpg" alt=""></span>
+                <span style="--i:3;"><img src="./img/ca.jpg" alt=""></span>
+                <span style="--i:4;"><img src="./img/khoi.jpg" alt=""></span>
+                <span style="--i:5;"><img src="./img/mat1.jpg" alt=""></span>
+                <span style="--i:6;"><img src="./img/hoa2.jpg" alt=""></span>
+                <span style="--i:7;"><img src="./img/mat3.jpg" alt=""></span>
+                <span style="--i:8;"><img src="./img/khoitron.jpg" alt=""></span>
+            </div>
+            <div class="btns">
+                <div class="btn prev"></div>
+                <div class="btn next"></div>
+            </div>
+        </div>
+        
+        <script>
+            let prev = document.querySelector('.prev');
+            let next = document.querySelector('.next');
+            let box = document.querySelector('.box');
+        
+            let dagrees = 0;
+                
+            prev.addEventListener('click', function(){
+                dagrees += 45;
+                box.style = `transform: perspective(1000px) rotateY(${dagrees}deg)`;
+            })
+            next.addEventListener('click', function(){
+                dagrees -= 45;
+                box.style = `transform: perspective(1000px) rotateY(${dagrees}deg)`;
+            })
+        </script>
+    </div>
+
+    <section>
+        
+    </section>
+</body>
+</html>
